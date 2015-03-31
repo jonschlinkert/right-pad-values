@@ -24,10 +24,10 @@ module.exports = function rightPadValues(arr, prop) {
 
   while (len--) {
     var ele = arr[len];
-    var val = ele[prop];
-    var diff = max - val.length;
-    ele[prop] = pad(val, diff, ' ');
+    var val = ele[prop].toString();
+    ele[prop] = pad(val, (max - val.length), ' ');
     res[len] = ele;
   }
   return res;
 };
+
