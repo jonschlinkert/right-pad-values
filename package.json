@@ -1,7 +1,7 @@
 {
   "name": "right-pad-values",
   "description": "Right pad the values of a given property for each object in an array. Useful for creating text columns or tables.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/right-pad-values",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/right-pad-values",
@@ -20,7 +20,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "longest-value": "^0.2.0"
+    "longest-value": "^0.2.0",
+    "pad-right": "^0.2.1"
   },
   "devDependencies": {
     "mocha": "*",
