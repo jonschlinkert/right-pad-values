@@ -25,6 +25,7 @@ describe('right pad values', function () {
       ]);
     });
   });
+
   describe('object:', function () {
     it('should right-pad the values of an object:', function () {
       pad({a: 'b', c: 'dddddd', e: 'fff', g: 'hhhhh'}).should.eql({
