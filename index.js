@@ -81,6 +81,6 @@ function objectProperties(obj, prop) {
       res[key][prop] = pad(val[prop], longest, ' ');
     }
   });
-  console.log(res)
+
   return res;
 }
