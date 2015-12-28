@@ -25,8 +25,7 @@
     "pad-right": "^0.2.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "*"
   },
   "keywords": [
     "align",
