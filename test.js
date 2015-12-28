@@ -37,6 +37,40 @@ describe('right pad values', function () {
     });
   });
 
+  describe('objects:', function () {
+    it.only('should right-pad values of a specific object property:', function () {
+      var res = pad('foo', {
+        a: {
+          foo: 'a',
+          bar: 'z'
+        },
+        b: {
+          foo: 'aaaaaaa',
+          bar: 'z'
+        },
+        c: {
+          foo: 'aaa',
+          bar: 'z'
+        }
+      });
+
+      // res.should.eql({
+      //   a: {
+      //     foo: 'a',
+      //     bar: 'z'
+      //   },
+      //   b: {
+      //     foo: 'aaaaaaa',
+      //     bar: 'z'
+      //   },
+      //   c: {
+      //     foo: 'aaa',
+      //     bar: 'z'
+      //   }
+      // });
+    });
+  });
+
   it('should throw an error when an array is not passed:', function () {
     (function () {
       pad();
