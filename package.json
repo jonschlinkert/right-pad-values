@@ -20,8 +20,9 @@
     "test": "mocha"
   },
   "dependencies": {
+    "isobject": "^2.0.0",
     "longest-value": "^0.2.0",
-    "pad-right": "^0.2.1"
+    "pad-right": "^0.2.2"
   },
   "devDependencies": {
     "mocha": "*",
@@ -41,14 +42,18 @@
   "verb": {
     "related": {
       "list": [
-        "right-align-values",
         "longest",
         "longest-value",
+        "pad-left",
+        "pad-right",
         "repeat-element",
         "repeat-string",
-        "pad-left",
-        "pad-right"
+        "right-align-values"
       ]
-    }
+    },
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ]
   }
 }
